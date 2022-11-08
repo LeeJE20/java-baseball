@@ -29,6 +29,7 @@ public class BaseballGame {
 
 	class Computer {
 
+		// TODO: 삭제
 		List<Integer> suggestion = new ArrayList<>();
 		List<Integer> answer = new ArrayList<>();
 
@@ -42,13 +43,13 @@ public class BaseballGame {
 			}
 		}
 
+		// TODO: 삭제
 		void setSuggestion(List<Integer> suggestion) {
 			for (int i = 0; i < this.suggestion.size(); i++) {
 				this.suggestion.set(i, suggestion.get(i));
 			}
 		}
 
-		void giveResult() {
 		
 		void giveResult(List<Integer> suggestion) {
 			final int MAX_STRIKE = 3;
@@ -63,19 +64,19 @@ public class BaseballGame {
 			}
 		}
 
-		boolean isAnswer() {
+		boolean isAnswer(List<Integer> suggestion) {
 			return false;
 		}
 
-		int checkBall() {
+		int checkBall(List<Integer> suggestion) {
 			return 0;
 		}
 
-		int checkStrike() {
+		int checkStrike(List<Integer> suggestion) {
 			return 0;
 		}
 
-		boolean isGameEnd() {
+		boolean setGameEnd(boolean toSet) {
 			return false;
 		}
 	}
